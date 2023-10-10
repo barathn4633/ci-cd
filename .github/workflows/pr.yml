@@ -34,9 +34,7 @@ jobs:
         env:
           COOKING_CORE_SETTING_DATABASES: '{"default":{"HOST":"db"}}'
           COOKING_CORE_SETTING_LOCAL_SETTINGS_PATH: './cooking_core/project/settings/templates/settings.github.py'
-      -
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
+
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
